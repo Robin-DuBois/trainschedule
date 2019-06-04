@@ -1,0 +1,27 @@
+h3 {
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+#trainSchedule, #addTrain {
+    max-width: 98%;
+    border: 3px solid #00ace6;
+    border-radius: 5px;
+    padding:0px;
+    margin:auto;
+}
+
+#brake {
+    padding:3px;
+    margin: 3px;
+}
+
+.form-group {
+    padding: 6px;
+    margin: auto;
+}
+
+.sBtn {
+    padding: 5px;
+    margin: auto;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+        <title>Train Schedual</title>
+        <meta charset='UTF-8'>
+        <!-- *reset css -->
+        <link rel="stylesheet" href="trains../../assets/css/style.css">
+        <!-- *If you would like to download boostrap https://getbootstrap.com-->
+        <!-- *Bootstrap css-->
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
+            integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous'>
+        <!-- *Bootstrap JS, Popper.js and JQuery-->
+        <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+            integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'>
+        </script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js'
+            integrity='sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k' crossorigin='anonymous'>
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+        <!-- *local css -->
+        <link rel="stylesheet" href="trains../../assets/css/style.css">
+    </head>
+
+    <body>
+        <main>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-12'>
+                        <div class='jumbotron' style='background-color: burlywood; color:#fff'>
+                            <h1 class='text-center'>Trains!</h1>
+                            <h3 class='text-center'>And some stuff about them.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row'>
+                    <div id='trainSchedule' class='col-lg-12'>
+                        <h3 style='background-color: #00ace6; color:#fff'>Current Train Schedule</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train ID</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">First Arrial</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Next Train</th>
+                                </tr>
+                            </thead>
+                            <tbody class='tableBody'>
+                            </tbody>
+                        </table>
+                        <br>
+                    </div>
+                </div>
+
+                <br id='brake'>
+                <div class='row'>
+                    <div id='addTrain' class='col-lg-12'>
+                        <h3 style='background-color: #00ace6; color:#fff'>Add Train</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="trainName">Train Name</label>
+                                <input type="text" class="form-control" id="trainName" placeholder="Thomas">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destination" placeholder="New York Central">
+                            </div>
+                            <div class="form-group">
+                                <label for="firstTrTime">First Arrial</label>
+                                <input type="text" class="form-control" id="firstTrTime" placeholder="19:30">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequency">Frequency</label>
+                                <input type="text" class="form-control" id="frequency" placeholder="20(minutes)">
+                            </div>
+                            <div class='sBtn'>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </main>
+    </body>
+    <footer>
+    </footer>
+    <!-- *moment JS -->
+    <script src="trains../../assets/script/moment.js"></script>
+    <script src="trains../../assets/script/logic.js"></script>
+</html>
